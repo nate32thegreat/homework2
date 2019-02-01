@@ -17,6 +17,12 @@ public class Post {
   @Type(type = "org.hibernate.type.TextType")
   String content;
 
+  String quality;
+
+  public String getQuality() { return quality; }
+
+  public void setQuality(String quality) { this.quality = quality; }
+
   public Long getId() {
     return id;
   }

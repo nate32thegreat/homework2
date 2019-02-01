@@ -47,7 +47,7 @@ public class LiquibaseChangeLogTests {
     try {
       return builder.parse(resource.getInputStream());  
     } catch (SAXParseException e) {
-      throw new Exception("Your db.changelog-master.xml is not valid xml. " +
+      throw new Exception("Your db.db.changelog-master.xml is not valid xml. " +
           "See the xml sample in the dbdemo project, or at https://www.liquibase.org/ " +
           "for a starting point.", e);
     }
